@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 EnableMetadataPublishing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnableMetadataPublishingonServiceinCode.Service", "EnableMetadataPublishingonServiceinCode.Service\EnableMetadataPublishingonServiceinCode.Service.csproj", "{4ADDBF92-2B41-40E5-B896-53A30A68BA22}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 DefinetheOperationBehavioronServiceImplementation", "04 DefinetheOperationBehavioronServiceImplementation", "{BCF87D0D-91F8-4D10-9A48-1E9583A25688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefinetheOperationBehavioronServiceImplementation.Service", "DefinetheOperationBehavioronServiceImplementation.Service\DefinetheOperationBehavioronServiceImplementation.Service.csproj", "{0F006583-92E2-437D-85A9-02A30E2BD3A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{4ADDBF92-2B41-40E5-B896-53A30A68BA22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4ADDBF92-2B41-40E5-B896-53A30A68BA22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4ADDBF92-2B41-40E5-B896-53A30A68BA22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F006583-92E2-437D-85A9-02A30E2BD3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F006583-92E2-437D-85A9-02A30E2BD3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F006583-92E2-437D-85A9-02A30E2BD3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F006583-92E2-437D-85A9-02A30E2BD3A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,7 @@ Global
 		{1EF3FFB9-13A6-49DF-8FCD-594EB1E2A882} = {517C77AC-C636-486C-A6FE-015323EA7AAD}
 		{16312A01-8D05-43F6-8474-FD908ABC9A82} = {FFC2673B-F0AC-4FCA-9B94-CBF59278D16A}
 		{4ADDBF92-2B41-40E5-B896-53A30A68BA22} = {16312A01-8D05-43F6-8474-FD908ABC9A82}
+		{BCF87D0D-91F8-4D10-9A48-1E9583A25688} = {FFC2673B-F0AC-4FCA-9B94-CBF59278D16A}
+		{0F006583-92E2-437D-85A9-02A30E2BD3A6} = {BCF87D0D-91F8-4D10-9A48-1E9583A25688}
 	EndGlobalSection
 EndGlobal
