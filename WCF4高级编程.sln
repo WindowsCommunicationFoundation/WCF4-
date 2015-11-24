@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "汽车租赁服务", "汽车租赁服务", "{21B0CDDA-9224-4A21-9C2E-0C1516D57AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aitipachong.CarRentalService.Contracts", "Aitipachong.CarRentalService.Contracts\Aitipachong.CarRentalService.Contracts.csproj", "{A71F15B2-8880-45C8-8478-1B6ACE2F042A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aitipachong.CarRentalService.Implementations", "Aitipachong.CarRentalService.Implementations\Aitipachong.CarRentalService.Implementations.csproj", "{F09CF4F8-8127-4597-95B3-0E3AF929C612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aitipachong.CarRentalService.ConsoleClient", "Aitipachong.CarRentalService.ConsoleClient\Aitipachong.CarRentalService.ConsoleClient.csproj", "{834BBB87-77F7-42D0-AE45-451BE25F1300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aitipachong.CarRentalService.ConsoleHost", "Aitipachong.CarRentalService.ConsoleHost\Aitipachong.CarRentalService.ConsoleHost.csproj", "{54105ADD-AA27-42BB-9A7E-63E7C976CC26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A71F15B2-8880-45C8-8478-1B6ACE2F042A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A71F15B2-8880-45C8-8478-1B6ACE2F042A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A71F15B2-8880-45C8-8478-1B6ACE2F042A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A71F15B2-8880-45C8-8478-1B6ACE2F042A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F09CF4F8-8127-4597-95B3-0E3AF929C612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09CF4F8-8127-4597-95B3-0E3AF929C612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09CF4F8-8127-4597-95B3-0E3AF929C612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09CF4F8-8127-4597-95B3-0E3AF929C612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{834BBB87-77F7-42D0-AE45-451BE25F1300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834BBB87-77F7-42D0-AE45-451BE25F1300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834BBB87-77F7-42D0-AE45-451BE25F1300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834BBB87-77F7-42D0-AE45-451BE25F1300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54105ADD-AA27-42BB-9A7E-63E7C976CC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54105ADD-AA27-42BB-9A7E-63E7C976CC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54105ADD-AA27-42BB-9A7E-63E7C976CC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54105ADD-AA27-42BB-9A7E-63E7C976CC26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A71F15B2-8880-45C8-8478-1B6ACE2F042A} = {21B0CDDA-9224-4A21-9C2E-0C1516D57AC4}
+		{F09CF4F8-8127-4597-95B3-0E3AF929C612} = {21B0CDDA-9224-4A21-9C2E-0C1516D57AC4}
+		{834BBB87-77F7-42D0-AE45-451BE25F1300} = {21B0CDDA-9224-4A21-9C2E-0C1516D57AC4}
+		{54105ADD-AA27-42BB-9A7E-63E7C976CC26} = {21B0CDDA-9224-4A21-9C2E-0C1516D57AC4}
+	EndGlobalSection
+EndGlobal
