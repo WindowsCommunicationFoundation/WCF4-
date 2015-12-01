@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aitipachong.CarRentalServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aitipachong.CarRentalService.ConsoleHost", "Aitipachong.CarRentalService.ConsoleHost\Aitipachong.CarRentalService.ConsoleHost.csproj", "{54105ADD-AA27-42BB-9A7E-63E7C976CC26}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "绑定", "绑定", "{FFC2673B-F0AC-4FCA-9B94-CBF59278D16A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 绑定", "3 绑定", "{FFC2673B-F0AC-4FCA-9B94-CBF59278D16A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Usage of ServiceBehavior", "01 Usage of ServiceBehavior", "{1A633892-F889-4871-AAAA-98EDF8BF6145}"
 EndProject
@@ -40,6 +40,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST.Service", "REST.Service\REST.Service.csproj", "{5E02D140-8E2B-409A-826F-71DAB9CD3EB5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST.Client", "REST.Client\REST.Client.csproj", "{9C5286E4-1068-4659-B343-1571B531C392}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 实例化", "5 实例化", "{CDCA2A78-B1D6-4343-8115-57E492471F53}"
+	ProjectSection(SolutionItems) = preProject
+		第五章 实例化.txt = 第五章 实例化.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,57 @@
+5.1 实例化上下文模式
+
+	在实例化服务器对象时，WCF采用了3中不同的模式：PerCall、PerSession和Single。
+	实例化行为是一个只关注服务器的实现过程，由ServiceBehavior特性的InstanceContextMode属性决定。
+
+	例如：
+	[ServiceBehavior(
+		InstanceContextMode = InstanceContextMode.PerCall)]
+	public class CarRentalService : ICarRentalService, IDisposable
+	{ 
+		...
+	}
+
+	5.1.1 PerCall模式
+		
+		客户端的代理把方法调用转交给服务器。每次调用一个方法时，都要创建服务对象的一个新实例（即调用默认的构造方法），当方法执行结束后，
+		就立即释放这个新实例。如果服务实现了IDisposable接口，就在把结果发送回代理之后，自动调用Dispose方法。
+
+		注意：只有在执行代理的Close方法时，才会关闭代理与服务器之间的链接。
+
+	5.1.2 Single模式
+
+		在Single模式下，不管有多少个客户端代理，只有一个实例。服务对象只实例化一次，服务的生命周期由ServiceHost来决定。
+
+	5.1.3 PerSession模式
+
+		每个客户端代理都与服务器端的一个专用实例进行通信。只要客户端不执行代理的Close方法，或者会话的超时时间还没有到（默认为10分钟），
+		此对象在服务器端就会一直持续下去。
+
+5.2 服务的生命周期
+
+	通过显示调用Close方法或等待默认的超时时间到来，均可以释放服务器实例。但是，在会话连接里，经常需要按一定的顺序调用方法。
+
+	可以使用IsInitiating和IsTerminating两个属性决定方法调用顺序。
+	IsInitiating表示此方法可以启动一个会话，或者当前正处于一个会话中。
+	IsTerminating表示如果启动此方法，会话就要结束。
+
+5.3 性能
+
+	5.3.1 限流
+		
+		WCF提供了另一个可以提高性能和避免服务器死锁，并阻止DoS攻击的方法。利用配置文件中ServiceBehavior节点的<serviceThrottling>元素
+		可以控制以下限制参数：
+			.maxConcurrentCalls:在同一时刻允许处理的最大服务操作数。如果超过此数，则需要把其他方法调用插入队列中，以等待处理。
+			.maxConcurrentSessions:同时传输与应用程序会话的最大个数。
+			.maxConcurrentInstances:实例的最大个数。
+
+			<serviceBehaviors>
+				<behavior name="throttlingBehavior">
+					<serviceThrottling 
+						maxConcurrentCalls = "5"
+						maxConcurrentSessions = "2"
+						maxConcurrentInstances = "3" />
+				</behavior>
+			</serviceBehaviors>
+
+
